@@ -1,0 +1,24 @@
+.parent{
+  color: blue;
+
+  & > .element {
+    color: purple;
+
+    &.second-child{
+      // &に半角スペースを空けた場合、elementの中のsecond-childとなり、意味合いが変わってしまうので注意
+      color: aqua;
+    }
+  }
+}
+
+.element{
+  color: red;
+}
+
+// .second-child{
+//   color: aqua;
+// }
+
+// .child{
+//   color: purple;
+// }
